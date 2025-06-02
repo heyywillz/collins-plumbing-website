@@ -231,7 +231,10 @@ nav {
 
 .about-image {
   background: linear-gradient(45deg, #2196f3, #ff6b35);
-  background-image: url(/assets/work-2.jpg);
+  background-image: url(/assets/work-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
   height: 400px;
   display: flex;
