@@ -82,7 +82,7 @@ nav {
 /* Hero Section */
 .hero {
  background-image: url(/assets/hero-image.jpg);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -842,7 +842,7 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -927,7 +927,7 @@ footer {
   }
   
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   
   .hero-content .tagline {
