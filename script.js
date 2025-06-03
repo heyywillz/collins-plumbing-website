@@ -122,27 +122,6 @@
             card.style.animationDelay = `${index * 0.2}s`;
         });
 
-        // Emergency service banner (appears on certain conditions)
-        function showEmergencyBanner() {
-            const currentHour = new Date().getHours();
-            // Show emergency banner during off-hours (6 PM to 8 AM)
-            if (currentHour >= 18 || currentHour <= 8) {
-                const banner = document.createElement('div');
-                banner.innerHTML = `
-                    <div style="background: linear-gradient(45deg, #FF6B35, #F7931E); color: white; padding: 10px; text-align: center; position: fixed; top: 0; left: 0; right: 0; z-index: 1001; font-weight: bold;">
-                        🚨 EMERGENCY SERVICE AVAILABLE 24/7 - CALL NOW: (123) 456-7890 🚨
-                        <button onclick="this.parentElement.parentElement.remove()" style="background: none; border: none; color: white; float: right; font-size: 1.2rem; cursor: pointer;">&times;</button>
-                    </div>
-                `;
-                document.body.insertBefore(banner, document.body.firstChild);
-                // Adjust header position
-                document.querySelector('header').style.top = '40px';
-            }
-        }
-
-        // Call emergency banner function
-        showEmergencyBanner();
-
         // Add form validation styling
         document.querySelectorAll('input, textarea, select').forEach(input => {
             input.addEventListener('blur', function() {
