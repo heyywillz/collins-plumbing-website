@@ -71,8 +71,8 @@
                 return;
             }
             
-            // In a real application, you would send this data to your server
-            // For now, we'll just show a success message
+            // Here you would typically send the data to your server
+            // For demonstration purposes, we'll just log it to the console
             alert('Thank you for your message! We\'ll get back to you within 24 hours.');
             
             // Reset form
@@ -133,7 +133,7 @@
             });
         });
 
-        // Lazy loading for images (when real images are added)
+        // Lazy loading for images
         if ('IntersectionObserver' in window) {
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
